@@ -33,3 +33,16 @@ Al termine dell **Milestone 1** realizzare:
 
 ### Bonus
 Visualizzare biglietto con il click di un bottone
+
+## Svolgimento
+
+Chiedere all'utente le informazioni base:
+
+- **Età** & **Kilometraggio** da percorrere;
+- Calcolare il prezzo standard
+
+**SE** l'**Età** è:
+- >18 allora applicare 20% di sconto al <u> Prezzo Finale </u>
+- **SE** <65 allora applicare 40% di sconto al <u> Prezzo Finale </u>
+
+<u> Restituire a schermo </u> il **Prezzo Finale**. 
