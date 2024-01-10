@@ -3,6 +3,7 @@ let userAge;
 let mileage;
 let fristPrice;
 let discountPrice;
+let userName;
 const discount20 = 0.2;
 const discount40 = 0.4;
 const priceKm = 0.21;
@@ -17,7 +18,8 @@ userAge = parseInt(document.getElementById('user-age').value);
 console.log(userAge);
 mileage = parseInt(document.getElementById('distance').value);
 console.log(mileage);
-
+userName = document.getElementById('nameUser');
+console.log(userName);
 
     //prezzo standard
     fristPrice = mileage * priceKm;
@@ -33,5 +35,7 @@ console.log(mileage);
         discountPrice = fristPrice - (fristPrice * discount40);
     }
     console.log(discountPrice)
-    document.getElementById('discountTicket').innerText = discountPrice.toFixed(2);
+    document.getElementById('discountTicket').innerText = discountPrice;
+    document.getElementById('userticket').innerText = userName.value;
+    console.log(userticket);
 });

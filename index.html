@@ -19,22 +19,34 @@
 </head>
 <body>
     <div class="container">
-        <h1>Inserire dati</h1>
-        <label for="">Età</label>
-        <input type="text" id="user-age" class="">
+        <h1 class="mb-3">Inserire dati</h1>
+
+        <div class="mb-3">
+            <label for="">Nominativo</label> <br>
+            <input type="text" id="nameUser">
+        </div>
+
+        <label for="">Età</label> <br>
+        <input type="text" id="user-age" class="mb-3">
 
         <label for="">Chilometri da percorrere</label>
-        <input type="text" id="distance" class="">
-
-        <button id="submit">INVIA</button>
-
+        <input type="text" id="distance" class="mb-3">
+        
         <div>
+            <button id="submit">INVIA</button>
+        </div>
+
+        <div class="mt-3">
             <span>Prezzo Standard:</span>
             <span id="standarPrice"></span>
         </div>
         <div>
             <span>Prezzo scontato:</span>
             <span id="discountTicket"></span>
+        </div>
+        <div>
+            <span>Nominativo:</span>
+            <span id="userticket"></span>
         </div>
         
     </div>
