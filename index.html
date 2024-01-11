@@ -19,34 +19,37 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="mb-3">Inserire dati</h1>
+        <h1 class="mb-3 text-center">Inserire dati</h1>
 
         <div class="mb-3">
-            <label for="">Nominativo</label> <br>
-            <input type="text" id="nameUser">
+            <label for="" class="form-label fw-bold">Nominativo</label> <br>
+            <input type="text" class="form-control shadow" id="nameUser">
         </div>
 
-        <label for="">Età</label> <br>
-        <input type="text" id="user-age" class="mb-3">
+        <label for="" class="form-label fw-bold">Età</label> <br>
+        <input type="text" id="user-age" class="form-control mb-3 shadow">
 
-        <label for="">Chilometri da percorrere</label>
-        <input type="text" id="distance" class="mb-3">
+        <label for="" class="form-label fw-bold">Chilometri da percorrere</label>
+        <input type="text" id="distance" class="form-control mb-3 shadow">
         
         <div>
-            <button id="submit">INVIA</button>
+            <button id="submit" class="btn btn-info shadow-sm">INVIA</button>
         </div>
 
-        <div class="mt-3">
-            <span>Prezzo Standard:</span>
-            <span id="standarPrice"></span>
-        </div>
-        <div>
-            <span>Prezzo scontato:</span>
-            <span id="discountTicket"></span>
-        </div>
-        <div>
-            <span>Nominativo:</span>
-            <span id="userticket"></span>
+        <div class="border border-danger mt-3 mb-3">
+
+            <div class="">
+                <span class="fw-medium">Nominativo:</span>
+                <span id="userticket"></span>
+            </div>
+            <div >
+                <span class="fw-medium">Prezzo Standard:</span>
+                <span id="standarPrice"></span>
+            </div>
+            <div>
+                <span class="fw-medium">Prezzo scontato:</span>
+                <span id="discountTicket"></span>
+            </div>
         </div>
         
     </div>

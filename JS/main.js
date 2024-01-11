@@ -35,6 +35,7 @@ console.log(userName);
         discountPrice = fristPrice - (fristPrice * discount40);
     }
     console.log(discountPrice)
+    
     document.getElementById('discountTicket').innerText = discountPrice;
     document.getElementById('userticket').innerText = userName.value;
     console.log(userticket);
