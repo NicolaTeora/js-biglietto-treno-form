@@ -14,9 +14,9 @@ const submit = document.getElementById('submit');
 //chilometri da percorrere
 submit.addEventListener('click', function() {
 
-userAge = parseInt(document.getElementById('user-age').value);
+userAge = document.getElementById('user-age').value;
 console.log(userAge);
-mileage = parseInt(document.getElementById('distance').value);
+mileage = document.getElementById('distance').value;
 console.log(mileage);
 userName = document.getElementById('nameUser');
 console.log(userName);
@@ -29,12 +29,19 @@ console.log(userName);
     
     //scontistica da applicare al prezzo standard in base all'età
     
-    if (userAge < 18) {
+    // if (userAge < 18) {
+    //     discountPrice = fristPrice - (fristPrice * discount20);
+    // } else if (userAge > 65) {
+    //     discountPrice = fristPrice - (fristPrice * discount40);
+    // }
+    // console.log(discountPrice);
+
+    if (userAge == "minorenne") {
         discountPrice = fristPrice - (fristPrice * discount20);
-    } else if (userAge > 65) {
+    } else if (userAge == "over65") {
         discountPrice = fristPrice - (fristPrice * discount40);
     }
-    console.log(discountPrice)
+    console.log(discountPrice);
     
     document.getElementById('discountTicket').innerText = discountPrice;
     document.getElementById('userticket').innerText = userName.value;

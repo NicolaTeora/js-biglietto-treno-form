@@ -26,19 +26,33 @@
             <input type="text" class="form-control shadow" id="nameUser">
         </div>
 
-        <label for="" class="form-label fw-bold">Età</label> <br>
-        <input type="text" id="user-age" class="form-control mb-3 shadow">
-
+        <!-- <label for="" class="form-label fw-bold">Età</label> <br> -->
+        <!-- <input type="text" id="user-age" class="form-control mb-3 shadow"> -->
+        
+        
         <label for="" class="form-label fw-bold">Chilometri da percorrere</label>
         <input type="text" id="distance" class="form-control mb-3 shadow">
+       
+        <!--opzione età con select -->
+        <div class="mb-4">
+            <label for="user-age" class="form-label fw-bold">Età</label>
+            <select name="" id="user-age">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">over 65</option>
+            </select>
+
+        </div>
+        <!-- slect -->
         
         <div>
             <button id="submit" class="btn btn-info shadow-sm">INVIA</button>
         </div>
 
-        <div class="border border-danger mt-3 mb-3">
+        <div class="border border-danger mt-3 mb-3" id="ticketScreen">
 
             <div class="">
+                <h3>Dettagli Biglietto:</h3>
                 <span class="fw-medium">Nominativo:</span>
                 <span id="userticket"></span>
             </div>
