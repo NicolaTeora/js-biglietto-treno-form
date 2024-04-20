@@ -19,6 +19,7 @@ Il recap dei dati e l'output del prezzo finale (cioè il biglietto) andranno qui
 essere formattato con massimo due decimali, per indicare i centesimi sul prezzo.
 #### BONUS:
 Visualizzare il biglietto solo dopo che l'utente ha cliccato sul bottone.
+
 <b>Nota:</b><br>
 Se non vi sentite particolarmente creativi, questa potrebbe essere un'implementazione da seguire per il secondo milestone. 
 Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
