@@ -21,27 +21,28 @@
     <div class="container">
         <h1 class="mb-3 text-center">Inserire dati</h1>
 
-        <div class="mb-3">
-            <label for="" class="form-label fw-bold">Nominativo</label> <br>
-            <input type="text" class="form-control shadow" id="nameUser">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="" class="form-label fw-bold">Nominativo</label> <br>
+                    <input type="text" class="form-control shadow" id="nameUser">
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="" class="form-label fw-bold">Chilometri da percorrere</label>
+                <input type="text" id="distance" class="form-control mb-3 shadow">
+            </div>
         </div>
 
-        <!-- <label for="" class="form-label fw-bold">Età</label> <br> -->
-        <!-- <input type="text" id="user-age" class="form-control mb-3 shadow"> -->
-        
-        
-        <label for="" class="form-label fw-bold">Chilometri da percorrere</label>
-        <input type="text" id="distance" class="form-control mb-3 shadow">
        
         <!--opzione età con select -->
-        <div class="mb-4">
+        <div class="mb-4 ">
             <label for="user-age" class="form-label fw-bold">Età</label>
-            <select name="" id="user-age">
+            <select class="form-select shadow" id="user-age">
                 <option value="minorenne">Minorenne</option>
                 <option value="maggiorenne">Maggiorenne</option>
                 <option value="over65">over 65</option>
             </select>
-
         </div>
         <!-- slect -->
         
@@ -49,8 +50,8 @@
             <button id="submit" class="btn btn-info shadow-sm">INVIA</button>
         </div>
 
-        <div class="border border-danger mt-3 mb-3" id="ticketScreen">
-
+        <!-- resoconto  -->
+        <div class="border d-none border-danger mt-3 mb-3 p-2" id="ticketScreen">
             <div class="">
                 <h3>Dettagli Biglietto:</h3>
                 <span class="fw-medium">Nominativo:</span>
@@ -65,7 +66,7 @@
                 <span id="discountTicket"></span>
             </div>
         </div>
-        
+
     </div>
 
     <!-- Bootstrap JS -->
