@@ -4,6 +4,7 @@ let mileage;
 let fristPrice;
 let discountPrice;
 let userName;
+let resumeDetailTicket = document.getElementById("ticketScreen");
 const discount20 = 0.2;
 const discount40 = 0.4;
 const priceKm = 0.21;
@@ -14,13 +15,9 @@ const submit = document.getElementById("submit");
 //chilometri da percorrere
 submit.addEventListener("click", function () {
   userAge = document.getElementById("user-age").value;
-  console.log(userAge);
   mileage = document.getElementById("distance").value;
-  console.log(mileage);
   userName = document.getElementById("nameUser");
-  console.log(userName);
 
-  let resumeDetailTicket = document.getElementById("ticketScreen");
   resumeDetailTicket.classList.remove("d-none");
 
   //prezzo standard
@@ -40,5 +37,4 @@ submit.addEventListener("click", function () {
 
   document.getElementById("discountTicket").innerText = discountPrice;
   document.getElementById("userticket").innerText = userName.value;
-  console.log(userticket);
 });
